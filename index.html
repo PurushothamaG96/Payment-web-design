@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main class="main center">
+        <section class="success-message padding">
+            <i class="fa fa-check fa-5x"></i>
+            <h1 class="color-white">Success</h1>
+            <h4 class="color-white">Your payment was processed</h4>
+        </section>
+        <div class="payment-form">
+            
+            <div class="padding">
+                <h1 class="margin">Payment</h1>
+                <p class="margin">Complete your pro membership</p>
+            </div>
+           
+            <div class="membership-price padding">
+                <h1 class="margin"><span style="color:gray">$</span>899<span style="color:gray; font-size: 0.8em;">USD</span></h1>
+                <hr>
+                <div class="checkbox-container">
+                    <div>
+                        <i class="fa fa-check margin greenmark"></i>
+                        <label>Messaging</label>
+                    </div>
+                    <div>
+                        <i class="fa fa-check margin greenmark"></i>
+                        <label>Analytics</label>
+                    </div>
+                    <div>
+                        <i class="fa fa-check margin greenmark"></i>
+                        <label>Support</label>
+                    </div>
+                    <div>
+                        <i class="fa fa-check margin greenmark"></i>
+                        <label>Discounts</label>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="padding">
+                <p class="margin">Pay with card</p>
+                <div>
+                    <input name="credit-number" class="margin card-number" type="tel" pattern="\d*" placeholder="Card Number" />
+                </div>
+                <div>
+                    <input name="credit-expires" class="margin credit-input expiry" type="tel" pattern="\d*" maxlength="7"
+                        placeholder="MM / YY" />
+                    <input name="credit-cvc" class="margin credit-input pin" type="tel" pattern="\d*" maxlength="4" placeholder="CVC" />
+                </div>
+            </div>
+            <div class="padding">
+                <button class="margin submit-btn" id="btn">Make payment</button>
+            </div>
+            
+        </div>
+        <div class="invoice margin">
+            <nav class="justify-content-space margin padding">
+                <h3>Invoice</h3>
+                <h4>Download</h4>
+            </nav>
+            <section class="backgound-lightGray padding">
+                <div class="justify-content-space margin">
+                    <p>Pro membership</p>
+                    <h3>$899</h3>
+                </div>
+                <hr/>
+                <div class="justify-content-space margin">
+                    <p>Platform fee</p>
+                    <h3>$10</h3>
+                </div>
+            </section>
+            <footer class="justify-content-space padding">
+                <h4>Totla amount</h4>
+                <h1>$909</h1>
+            </footer>
+        </div>
+        <div class="cancel margin padding">
+            <h2>Remove?</h2>
+            <p>Please confirm the changes, you can't redo this again.</p>
+            <button id="confirm">Confirm</button>
+            <h4 id="take-me-back">Take me back</h4>
+        </div>
+
+    </main>
+</body>
+<script src="script.js" defer></script>
+
+</html>
